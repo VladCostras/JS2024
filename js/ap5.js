@@ -1,1 +1,0 @@
-alert('Javascript este activat');

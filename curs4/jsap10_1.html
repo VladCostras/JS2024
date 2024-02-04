@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Moduri de a defini o functie in JS</h1>
+    <P>Functii clasice fara return</P> <!-- Functii clasice fara return -->
+    <script>
+        function sumaNr(a, b) {
+            console.log(a + b);
+        }
+        sumaNr(2, 3);
+    </script>
+
+    <p>Functii clasice cu return</p> <!-- FUNCTII CLASICE CU RETURN -->
+
+    <script>
+        function suma2(a, b) {
+            return a + b;
+        }
+        let mySuma = suma2(2, 3);
+        console.log(mySuma);
+    </script>
+
+    <P>Functii anonime</P> <!-- Functii anonime -->
+    <script>
+        let suma = function (a, b) { return a + b };
+        console.log(suma(2, 3));
+
+        //METODA 4 FUNCTIE ANONIME DE TIP ARROW
+        var anon = (a, b) => a + b; //daca am o singura instructiune
+        console.log(anon(2, 3));
+
+        //METODA 5 functie anonima de tip arrow (sau lambda)
+        var anon1 = (a, b) => { return a + b };
+        console.log(anon(2, 3));
+
+    </script>
+</body>
+
+</html>
